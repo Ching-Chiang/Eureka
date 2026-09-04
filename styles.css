@@ -62,7 +62,7 @@ button { font: inherit; }
   color: var(--white);
   background: var(--dark);
 }
-.hero-backdrop { position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(7,12,10,.97) 0%, rgba(7,12,10,.82) 40%, rgba(7,12,10,.24) 76%, rgba(7,12,10,.52) 100%), linear-gradient(0deg, rgba(7,12,10,.7), transparent 42%), url("screenshots/00-gui-home.png"); background-size: cover; background-position: center; transform: scale(1.01); }
+.hero-backdrop { position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(7,12,10,.97) 0%, rgba(7,12,10,.82) 40%, rgba(7,12,10,.24) 76%, rgba(7,12,10,.52) 100%), linear-gradient(0deg, rgba(7,12,10,.7), transparent 42%), url("screenshots/02-chat.png"); background-size: cover; background-position: center; transform: scale(1.01); }
 .hero-content { position: relative; width: min(var(--max), calc(100% - 48px)); margin: 20px auto 0; padding-right: 48%; }
 .eyebrow { margin: 0 0 18px; color: var(--green-deep); font-family: ui-monospace, "Cascadia Code", monospace; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; }
 .hero .eyebrow, .heading-light .eyebrow, .workflow-section .eyebrow, .clients-section .eyebrow, .final-cta .eyebrow { color: var(--green); }
@@ -178,7 +178,7 @@ footer p:last-child { text-align: right; }
 
 @media (max-width: 640px) {
   .hero { min-height: 90vh; align-items: flex-end; padding-bottom: 94px; }
-  .hero-backdrop { background-image: linear-gradient(0deg, rgba(7,12,10,.98) 4%, rgba(7,12,10,.84) 58%, rgba(7,12,10,.4) 100%), url("screenshots/00-gui-home.png"); background-position: 62% center; }
+  .hero-backdrop { background-image: linear-gradient(0deg, rgba(7,12,10,.98) 4%, rgba(7,12,10,.84) 58%, rgba(7,12,10,.4) 100%), url("screenshots/02-chat.png"); background-position: 62% center; }
   .hero-content { width: calc(100% - 40px); margin: 0 auto; padding: 0; }
   .hero h1 { font-size: 64px; }
   .hero-lead { margin-top: 22px; font-size: 25px; }
