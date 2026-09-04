@@ -10,11 +10,23 @@ Eureka 是一个本地优先的金融研究 Agent。它不是把大模型包装�
 
 [![Eureka 产品演示（完整流程加速预览）](./eureka-demo-preview.gif)](./eureka-demo.mp4)
 
-上方 GIF 将完整 6 分 17 秒录像压缩为约 25 秒、126 帧的无声预览，并使用 GitHub 兼容性更好的 GIF 格式循环播放。点击预览可打开原速 MP4。
+[打开或下载完整原速演示视频](https://github.com/Ching-Chiang/Eureka/blob/main/eureka-demo.mp4)
 
-- [打开或下载完整原速演示视频](./eureka-demo.mp4)
-- 动态预览：约 25 秒，覆盖完整录像时间轴
-- 完整视频：约 6 分 17 秒，保留原始交互过程
+## TUI 与 GUI 两种交互版本
+
+Eureka 同时提供 TUI 和 GUI 两种客户端形态。两者连接同一个 Eureka Core，复用相同的注册工具、金融计算能力、SQLite 研究记录与不可变资产谱系，不会各自维护一套相互冲突的业务状态。
+
+### TUI 终端版
+
+TUI 是 Eureka 的首要交互入口，适合研究人员和开发者在终端中快速发起任务。首页将实时 Market Board 固定在对话上方，展示中国期货、A 股、美股、情绪、宏观与新闻，同时保留完整的 Agent 输入、工具进度和结果区域。
+
+![Eureka TUI 终端版首页](./screenshots/00-tui-home.png)
+
+### GUI 图形工作台
+
+GUI 提供更直观的研究工作台，包含 Electron Desktop 与 localhost Web 客户端。首页集中呈现当前研究、市场快照、资产数量和最近结果，并可进入 Agent 对话、策略回测、工作流画布、研究资产和运行控制页面。
+
+![Eureka GUI 图形工作台首页](./screenshots/00-gui-home.png)
 
 ## Eureka 解决什么实际问题
 
