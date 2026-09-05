@@ -40,10 +40,12 @@ button { font: inherit; }
   justify-content: space-between;
   padding: 0 max(24px, calc((100vw - var(--max)) / 2));
   color: var(--white);
-  border-bottom: 1px solid rgba(255,255,255,.16);
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  background: rgba(8,13,11,.82);
+  backdrop-filter: blur(14px);
   transition: background .25s ease, height .25s ease;
 }
-.site-header.scrolled { height: 62px; background: rgba(12,17,15,.94); backdrop-filter: blur(14px); }
+.site-header.scrolled { height: 62px; background: rgba(8,13,11,.96); }
 .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 760; font-size: 15px; letter-spacing: 2px; }
 .brand-mark { display: grid; place-items: center; width: 30px; height: 30px; color: var(--dark); background: var(--green); font-size: 18px; font-weight: 850; }
 .site-nav { display: flex; align-items: center; gap: 28px; font-size: 14px; }
@@ -62,12 +64,13 @@ button { font: inherit; }
   color: var(--white);
   background: var(--dark);
 }
-.hero-backdrop { position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(7,12,10,.97) 0%, rgba(7,12,10,.82) 40%, rgba(7,12,10,.24) 76%, rgba(7,12,10,.52) 100%), linear-gradient(0deg, rgba(7,12,10,.7), transparent 42%), url("screenshots/02-chat.png"); background-size: cover; background-position: center; transform: scale(1.01); }
-.hero-content { position: relative; width: min(var(--max), calc(100% - 48px)); margin: 20px auto 0; padding-right: 48%; }
+.hero-backdrop { position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(7,12,10,.98) 0%, rgba(7,12,10,.94) 34%, rgba(7,12,10,.62) 51%, rgba(7,12,10,.08) 77%, rgba(7,12,10,.16) 100%), linear-gradient(0deg, rgba(7,12,10,.42), transparent 38%), url("screenshots/02-chat.png"); background-size: cover; background-position: center; transform: scale(1.01); }
+.hero-content { position: relative; width: min(var(--max), calc(100% - 48px)); margin: 34px auto 0; }
+.hero-content > * { max-width: 560px; }
 .eyebrow { margin: 0 0 18px; color: var(--green-deep); font-family: ui-monospace, "Cascadia Code", monospace; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; }
 .hero .eyebrow, .heading-light .eyebrow, .workflow-section .eyebrow, .clients-section .eyebrow, .final-cta .eyebrow { color: var(--green); }
-.hero h1 { margin: 0; font-size: clamp(64px, 9vw, 126px); line-height: .9; font-weight: 820; letter-spacing: 0; }
-.hero-lead { margin: 28px 0 12px; font-size: clamp(24px, 3vw, 38px); line-height: 1.35; font-weight: 680; }
+.hero h1 { margin: 0; font-size: clamp(64px, 7.5vw, 104px); line-height: .92; font-weight: 820; letter-spacing: 0; }
+.hero-lead { margin: 26px 0 12px; font-size: clamp(24px, 2.65vw, 34px); line-height: 1.34; font-weight: 680; }
 .hero-copy { max-width: 630px; margin: 0; color: rgba(255,255,255,.72); font-size: 17px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
 .button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: 10px 22px; border: 1px solid transparent; font-size: 14px; font-weight: 650; transition: transform .2s ease, background .2s ease; }
@@ -162,7 +165,7 @@ footer p:last-child { text-align: right; }
   .site-nav.open { display: flex; }
   .site-nav a { padding: 10px 0; }
   .site-nav .nav-action { margin-top: 6px; padding: 8px 12px; text-align: center; }
-  .hero-content { padding-right: 26%; }
+  .hero-content > * { max-width: 520px; }
   .problem-grid { grid-template-columns: repeat(2, 1fr); }
   .problem-item { border-bottom: 1px solid var(--line); }
   .problem-item:nth-child(2) { border-right: 0; padding-right: 0; }
@@ -178,10 +181,10 @@ footer p:last-child { text-align: right; }
 
 @media (max-width: 640px) {
   .hero { min-height: 90vh; align-items: flex-end; padding-bottom: 94px; }
-  .hero-backdrop { background-image: linear-gradient(0deg, rgba(7,12,10,.98) 4%, rgba(7,12,10,.84) 58%, rgba(7,12,10,.4) 100%), url("screenshots/02-chat.png"); background-position: 62% center; }
+  .hero-backdrop { background-image: linear-gradient(0deg, rgba(7,12,10,.99) 5%, rgba(7,12,10,.94) 48%, rgba(7,12,10,.48) 100%), url("screenshots/02-chat.png"); background-position: 70% center; }
   .hero-content { width: calc(100% - 40px); margin: 0 auto; padding: 0; }
-  .hero h1 { font-size: 64px; }
-  .hero-lead { margin-top: 22px; font-size: 25px; }
+  .hero h1 { font-size: 58px; }
+  .hero-lead { margin-top: 20px; font-size: 24px; line-height: 1.3; }
   .hero-copy { font-size: 14px; }
   .hero-actions { margin-top: 24px; }
   .hero-actions .button { width: 100%; }
